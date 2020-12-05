@@ -1,0 +1,27 @@
+@import "../../../App.scss";
+
+.shortIntro {
+  margin: 0 1em 0.8em 1em;
+  display: flex;
+  align-content: space-between;
+}
+
+.shortIntro__left {
+  flex-basis: 25em;
+}
+
+.shortIntro__right {
+  flex-basis: 25em;
+}
+
+.shortIntro__center {
+  justify-content: center;
+}
+
+.shortIntro p {
+  font-size: 25px;
+}
+.shortIntro__shortText {
+  color: $darkGrey;
+  font-size: 16px !important;
+}

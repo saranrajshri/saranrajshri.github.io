@@ -1,0 +1,32 @@
+@import "../../../App.scss";
+
+.projectsList {
+  margin: 0 1em 0.8em 1em;
+  display: flex;
+  align-content: space-between;
+}
+
+.projectsList__left {
+  flex-basis: 25em;
+}
+
+.projectsList__center {
+  justify-content: center;
+  //   border: 1px solid red;
+}
+.projectsList__right {
+  flex-basis: 25em;
+}
+
+.projectsListItem {
+  //   border: 1px solid #000;
+}
+
+.project__title {
+  text-align: center;
+}
+
+.project__title h6 {
+  font-size: 20px;
+  color: $darkBlue;
+}

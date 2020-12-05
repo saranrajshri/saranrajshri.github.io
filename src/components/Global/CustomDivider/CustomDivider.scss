@@ -1,0 +1,33 @@
+@import "../../../App.scss";
+
+.customDivider {
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.customDivider__left {
+  flex-basis: 25em;
+}
+
+.customDivider__right {
+  flex-basis: 25em;
+}
+
+.customDivider__center {
+  display: flex;
+  width: 100%;
+}
+
+.customDivider__centerBlueHalf {
+  height: 2px;
+  width: 10%;
+  background-color: $blue;
+}
+
+.customDivider__centerGreyHalf {
+  height: 1px;
+  align-self: center;
+  width: 100%;
+  background-color: $grey;
+}

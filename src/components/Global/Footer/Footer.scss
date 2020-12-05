@@ -1,0 +1,53 @@
+@import "../../../App.scss";
+
+.footer {
+  margin: 0 1em 0.8em 1em;
+  display: flex;
+  align-content: space-between;
+}
+
+.footer__left {
+  flex-basis: 25em;
+}
+
+.footer__right {
+  flex-basis: 25em;
+}
+
+.footer__center {
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 25px;
+}
+.footer__shortText {
+  color: $darkBlue;
+  font-size: 16px !important;
+}
+
+.footer__boldText {
+  font-family: $poppinsSemiBold;
+}
+
+.footer_menu {
+  margin-bottom: 0.8em;
+}
+
+.footer_menu a {
+  margin-right: 1.5em;
+  text-decoration: none;
+  color: $blue;
+}
+.footer_menu a:hover {
+  color: $darkBlue;
+  font-weight: bold;
+}
+
+.footer__bottomLinks {
+  margin-bottom: 1em;
+}
+
+.footer__tradeMark {
+  color: $darkGrey;
+}

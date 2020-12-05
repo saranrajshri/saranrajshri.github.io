@@ -1,0 +1,54 @@
+@import "../../../App.scss";
+
+.header {
+  display: flex;
+  padding: 0.8em 0 0.8em 0;
+  align-items: center;
+}
+
+.header__logo {
+  flex-grow: 3;
+  margin-left: 0.6em;
+}
+.header__logo a {
+  text-decoration: none;
+  color: $black;
+}
+
+.header__logoBold {
+  font-family: $poppinsSemiBold;
+  margin-left: 0.3em;
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 8;
+}
+.header__menu a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $black;
+  margin-right: 1.8em;
+}
+
+.header__menu a:hover {
+  color: $grey;
+  transition-duration: 0.6s;
+}
+
+// Hide the hamburger icon (Desktop and tablet view)
+.header__menu .header__hamBurger {
+  cursor: pointer;
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+  .header__menu .header__menuList {
+    display: none;
+  }
+  .header__menu .header__hamBurger {
+    margin-right: 1em;
+    display: block;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../App.scss";
+
+.contactFormWrapper {
+  margin-top: 5em;
+}
+
+.contactForm__avatar {
+  border: 10px solid $white;
+  border-radius: 1em;
+  background-color: $pink;
+}
+.contactForm__title h3 {
+  font-size: 2em;
+}
+.contactFrom__formContainer {
+  width: 100vh;
+}
+.contactForm__input {
+  padding: 0.7em;
+  width: 100%;
+  margin-bottom: 0.5em;
+  font-family: $poppinsRegular;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid $grey;
+}
+
+.contactFrom__formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+  .contactFrom__formContainer {
+    width: 65vh;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+  .contactFrom__formContainer {
+    width: 65vh;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../App.scss";
+
+.banner {
+  display: flex;
+  height: 70vh;
+  //   border: 1px solid #000;
+}
+
+.banner__avatar {
+  border: 10px solid $white;
+  border-radius: 1em;
+  background-color: $pink;
+}
+
+.banner__title h2 {
+  font-size: 3em;
+}
+
+.banner__title h2:after {
+  display: block;
+  text-align: center;
+  font-family: $poppinsRegular !important;
+  font-size: 18px;
+  color: $darkBlue;
+  margin-top: 0.5em;
+  content: "The Source Code link and the live demonstatrations links for each project are given below";
+}

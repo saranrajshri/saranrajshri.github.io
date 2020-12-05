@@ -1,0 +1,32 @@
+@import "../../../App.scss";
+
+.achievementsList {
+  margin: 0 1em 0.8em 1em;
+  display: flex;
+  align-content: space-between;
+}
+
+.achievementsList__left {
+  flex-basis: 25em;
+}
+
+.achievementsList__center {
+  //   justify-content: center;
+}
+
+.achievementsList__right {
+  flex-basis: 25em;
+}
+
+.achievementsList__center p,
+ul {
+  color: $darkBlue;
+}
+
+.achievementsList__textBold {
+  font-family: $poppinsSemiBold;
+}
+
+.achievementsList__container {
+  display: flex;
+}

@@ -1,0 +1,43 @@
+@import "../../../App.scss";
+
+.skillsList {
+  margin: 0 1em 0.8em 1em;
+  display: flex;
+  align-content: space-between;
+}
+
+.skillsList__left {
+  flex-basis: 18em;
+}
+
+.skillsList__center {
+  //   justify-content: center;
+}
+
+.skillsList__right {
+  flex-basis: 18em;
+}
+
+.skillsList__center p,
+ul {
+  color: $darkBlue;
+}
+
+.skillsList__textBold {
+  font-family: $poppinsSemiBold;
+}
+
+.skillsListContainer {
+  display: flex;
+}
+.skillsListContainer__section {
+  margin-right: 2em;
+  color: $darkBlue;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+  .skillsListContainer {
+    flex-direction: column;
+  }
+}

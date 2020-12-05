@@ -1,0 +1,40 @@
+@font-face {
+  font-family: poppinsRegular;
+  src: url("./fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url("./fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url("./fonts/poppins/Poppins-Bold.ttf");
+}
+
+$bg-color: #f8fafd;
+$white: #fff;
+$black: #000;
+$grey: #87898d;
+$darkGrey: #545564;
+$yellow: #fbee4e;
+$darkBlue: #2c3e50;
+$blue: #3579df;
+$pink: #f5a4be;
+
+// Fonts
+$poppinsRegular: poppinsRegular;
+$poppinsSemiBold: poppinsSemiBold;
+$poppinsBold: poppinsBold;
+
+body {
+  margin-top: 0;
+  padding: 0;
+  background-color: $bg-color;
+  font-family: $poppinsRegular;
+}
+
+::selection {
+  background: $yellow;
+}

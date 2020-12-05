@@ -1,0 +1,62 @@
+@import "../../../App.scss";
+
+.aboutMe {
+  margin: 0 1em 0.8em 1em;
+  display: flex;
+  align-content: space-between;
+}
+
+.aboutMe__left {
+  flex-basis: 25em;
+}
+
+.aboutMe__right {
+  flex-basis: 25em;
+}
+
+.aboutMe__center {
+  justify-content: center;
+}
+
+.aboutMe p {
+  font-size: 25px;
+}
+.aboutMe__shortText {
+  color: $darkBlue;
+  font-size: 16px !important;
+}
+
+.aboutMe__header {
+  display: flex;
+}
+
+.aboutMe__avatar {
+  height: 4.5em;
+  width: 4.5em;
+  border: 10px solid #fff;
+  border-radius: 1.25em;
+  box-shadow: 0px 0px 15px 0.5px #888888;
+}
+
+.aboutMe__avatar img {
+  width: 100%;
+}
+
+.aboutMe__title {
+  margin-left: 1.3em;
+  margin-top: 0.6em;
+  margin-bottom: 1.5em;
+}
+
+.aboutMe__titleUpper {
+  font-size: 20px;
+  color: $darkGrey;
+}
+.aboutMe__titleBelow {
+  font-size: 30px;
+  font-family: $poppinsSemiBold;
+}
+
+.aboutMe__boldText {
+  font-family: $poppinsSemiBold;
+}
