@@ -47,11 +47,11 @@ const Footer = (props) => {
         <center>
           <div className="footer__bottomLinks">
             <div className="footer_menu">
-              <a href="/">Home</a>
-              <a href="/projects">Projects</a>
-              <a href="/achievements">Achievements</a>
-              <a href="#">Blog</a>
-              <a href="/contact">Contact</a>
+              <a href="/#/">Home</a>
+              <a href="/#/projects">Projects</a>
+              <a href="/#/achievements">Achievements</a>
+              <a href="/#/#">Blog</a>
+              <a href="/#/contact">Contact</a>
             </div>
             <p className="footer__tradeMark">
               Made with <FontAwesomeIcon icon={faHeart} /> Shri Saran Raj

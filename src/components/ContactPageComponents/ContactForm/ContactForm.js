@@ -6,9 +6,10 @@ import "./ContactForm.scss";
 
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import axios from "axios";
 import NotesImage from "../../../images/avatar.png";
 import CustomDivider from "../../Global/CustomDivider/CustomDivider";
+import constants from "../../../constants/constants";
 
 const ContactForm = () => {
   const alert = useAlert();
@@ -16,23 +17,25 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    description: "",
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const isValidData = () => {
-    return true;
-  };
-
   const handleSubmit = () => {
-    if (isValidData(formData)) {
-      alert.success("Message Sent");
-    } else {
-      alert.error("Failed to send message");
-    }
+    axios
+      .post(`${constants.BASE_URL}/sendMail`, formData)
+      .then((res) => {
+        if (res.status === 200) {
+          alert.success("Message Sent");
+          setFormData({ name: "", email: "", description: "" });
+        }
+      })
+      .catch((err) => {
+        alert.error("Failed");
+      });
   };
   return (
     <div className="contactFormWrapper">
@@ -55,20 +58,23 @@ const ContactForm = () => {
                 placeholder="Your Name"
                 name="name"
                 onChange={handleChange}
+                value={formData.name}
                 className="contactForm__input"
               />
               <input
                 type="text"
                 placeholder="Your Email"
                 name="email"
+                value={formData.email}
                 onChange={handleChange}
                 className="contactForm__input"
               />
               <textarea
                 rows={3}
                 placeholder="Enter your message here.."
-                name="message"
+                name="description"
                 onChange={handleChange}
+                value={formData.description}
                 className="contactForm__input"
               />
             </div>
