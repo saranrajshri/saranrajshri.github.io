@@ -24,7 +24,7 @@ const Banner = () => {
             <img src={NotesImage} alt="avatar" />
           </div>
           <div className="banner__title">
-            <h2>My Projects</h2>
+            <h4>My Projects</h4>
 
             <motion.div
               initial={{ opacity: 0 }}
