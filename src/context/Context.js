@@ -59,6 +59,16 @@ const reducer = (state, action) => {
   switch (action.type) {
     default:
     case "SET_DARK_MODE":
+      // Change the DOM Element Attribute
+      if (action.payload) {
+        document
+          .getElementsByTagName("HTML")[0]
+          .setAttribute("data-theme", "dark");
+      } else {
+        document
+          .getElementsByTagName("HTML")[0]
+          .setAttribute("data-theme", "light");
+      }
       return {
         ...state,
         isDarkModeEnabled: action.payload,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { Link, Element } from "react-scroll";
 
@@ -7,12 +7,17 @@ import "./CenterBanner.scss";
 import AvatarImage from "../../../images/avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { Context } from "../../../context/Context";
 
 const CenterBanner = () => {
+  const [state, dispatch] = useContext(Context);
+  const handleThemeChange = () => {
+    dispatch({ type: "SET_DARK_MODE", payload: !state.isDarkModeEnabled });
+  };
   return (
     <Element name="centerBanner">
       <div className="banner">
-        <div className="banner__avatar">
+        <div className="banner__avatar" onClick={handleThemeChange}>
           <img src={AvatarImage} alt="avatar" />
         </div>
         {/* Animate */}

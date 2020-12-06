@@ -14,16 +14,6 @@ const Header = () => {
     setDarkMode(isDarkModeEnabled);
     // Update the global state
     dispatch({ type: "SET_DARK_MODE", payload: isDarkModeEnabled });
-    // Change the DOM Element Attribute
-    if (isDarkModeEnabled) {
-      document
-        .getElementsByTagName("HTML")[0]
-        .setAttribute("data-theme", "dark");
-    } else {
-      document
-        .getElementsByTagName("HTML")[0]
-        .setAttribute("data-theme", "light");
-    }
   };
 
   return (
