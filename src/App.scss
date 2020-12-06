@@ -1,3 +1,25 @@
+//Light theme
+html {
+  --bg-color: #f8fafd;
+  --white: #fff;
+  --black: #000;
+  --grey: #87898d;
+  --darkGrey: #545564;
+  --yellow: #fbee4e;
+  --darkBlue: #2c3e50;
+  --blue: #3579df;
+  --pink: #f5a4be;
+}
+
+// dark theme
+html[data-theme="dark"] {
+  --bg-color: #1b1d1e;
+  --black: #e8e6e3;
+  --yellow: #16317b;
+  --darkBlue: #9eb3cc;
+  --pink: #661c29;
+}
+
 @font-face {
   font-family: poppinsRegular;
   src: url("./fonts/poppins/Poppins-Regular.ttf");
@@ -13,16 +35,6 @@
   src: url("./fonts/poppins/Poppins-Bold.ttf");
 }
 
-$bg-color: #f8fafd;
-$white: #fff;
-$black: #000;
-$grey: #87898d;
-$darkGrey: #545564;
-$yellow: #fbee4e;
-$darkBlue: #2c3e50;
-$blue: #3579df;
-$pink: #f5a4be;
-
 // Fonts
 $poppinsRegular: poppinsRegular;
 $poppinsSemiBold: poppinsSemiBold;
@@ -31,10 +43,19 @@ $poppinsBold: poppinsBold;
 body {
   margin-top: 0;
   padding: 0;
-  background-color: $bg-color;
+  color: var(--black);
+  background-color: var(--bg-color);
   font-family: $poppinsRegular;
 }
 
 ::selection {
-  background: $yellow;
+  background: var(--yellow);
+}
+
+a {
+  color: var(--blue);
+}
+
+a:visited {
+  color: var(--blue);
 }

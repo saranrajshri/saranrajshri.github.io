@@ -7,9 +7,9 @@
 }
 
 .banner__avatar {
-  border: 10px solid $white;
+  border: 10px solid var(--white);
   border-radius: 1em;
-  background-color: $pink;
+  background-color: var(--pink);
 }
 
 .banner__title h2 {
@@ -21,7 +21,7 @@
   text-align: center;
   font-family: $poppinsRegular !important;
   font-size: 18px;
-  color: $darkBlue;
+  color: var(--darkBlue);
   margin-top: 0.5em;
   content: "I have won some national level coding competitions.";
 }

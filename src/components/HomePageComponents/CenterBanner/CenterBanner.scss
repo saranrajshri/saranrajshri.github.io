@@ -39,7 +39,7 @@
   text-align: center;
   font-family: $poppinsRegular !important;
   font-size: 18px;
-  color: $darkBlue;
+  color: var(--darkBlue);
   margin-top: 0.5em;
   content: "Yes, I'm a programmer and I won't fix your computer";
 }
@@ -49,8 +49,8 @@
 }
 
 .banner__exploreButton {
-  background-color: $blue;
-  color: $white;
+  background-color: var(--blue);
+  color: var(--white);
   border: none;
   font-family: $poppinsRegular;
   font-size: 0.9em;

@@ -20,7 +20,7 @@
 
 .skillsList__center p,
 ul {
-  color: $darkBlue;
+  color: var(--darkBlue);
 }
 
 .skillsList__textBold {
@@ -32,7 +32,7 @@ ul {
 }
 .skillsListContainer__section {
   margin-right: 2em;
-  color: $darkBlue;
+  color: var(--darkBlue);
 }
 
 /* Media Queries */

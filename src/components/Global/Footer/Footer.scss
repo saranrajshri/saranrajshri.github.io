@@ -22,7 +22,7 @@
   font-size: 25px;
 }
 .footer__shortText {
-  color: $darkBlue;
+  color: var(--darkBlue);
   font-size: 16px !important;
 }
 
@@ -37,10 +37,10 @@
 .footer_menu a {
   margin-right: 1.5em;
   text-decoration: none;
-  color: $blue;
+  color: var(--blue);
 }
 .footer_menu a:hover {
-  color: $darkBlue;
+  color: var(--darkBlue);
   font-weight: bold;
 }
 
@@ -49,5 +49,5 @@
 }
 
 .footer__tradeMark {
-  color: $darkGrey;
+  color: var(--darkGrey);
 }

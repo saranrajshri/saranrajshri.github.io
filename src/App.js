@@ -30,18 +30,20 @@ const App = () => {
   }, []);
 
   return (
-    <ContextProvider>
-      <Provider template={AlertTemplate} {...options}>
-        <HashRouter basename="/">
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/projects" exact component={Projects} />
-            <Route path="/achievements" exact component={Achievements} />
-            <Route path="/contact" exact component={Contact} />
-          </Switch>
-        </HashRouter>
-      </Provider>
-    </ContextProvider>
+    <div>
+      <ContextProvider>
+        <Provider template={AlertTemplate} {...options}>
+          <HashRouter basename="/">
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/projects" exact component={Projects} />
+              <Route path="/achievements" exact component={Achievements} />
+              <Route path="/contact" exact component={Contact} />
+            </Switch>
+          </HashRouter>
+        </Provider>
+      </ContextProvider>
+    </div>
   );
 };
 

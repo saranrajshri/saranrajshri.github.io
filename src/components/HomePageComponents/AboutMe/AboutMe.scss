@@ -22,7 +22,7 @@
   font-size: 25px;
 }
 .aboutMe__shortText {
-  color: $darkBlue;
+  color: var(--darkBlue);
   font-size: 16px !important;
 }
 
@@ -50,7 +50,7 @@
 
 .aboutMe__titleUpper {
   font-size: 20px;
-  color: $darkGrey;
+  color: var(--darkGrey);
 }
 .aboutMe__titleBelow {
   font-size: 30px;

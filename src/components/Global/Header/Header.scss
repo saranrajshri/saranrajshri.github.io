@@ -12,7 +12,7 @@
 }
 .header__logo a {
   text-decoration: none;
-  color: $black;
+  color: var(--black) !important;
 }
 
 .header__logoBold {
@@ -27,12 +27,12 @@
 .header__menu a {
   cursor: pointer;
   text-decoration: none;
-  color: $black;
+  color: var(--black) !important;
   margin-right: 1.8em;
 }
 
 .header__menu a:hover {
-  color: $grey;
+  color: var(--grey);
   transition-duration: 0.6s;
 }
 
@@ -42,6 +42,9 @@
   display: none;
 }
 
+#header__darkModeButton {
+  margin-top: 10px !important;
+}
 /* Media Queries */
 @media (max-width: 650px) {
   .header__menu .header__menuList {

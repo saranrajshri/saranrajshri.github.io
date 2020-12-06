@@ -5,9 +5,9 @@
 }
 
 .contactForm__avatar {
-  border: 10px solid $white;
+  border: 10px solid var(--white);
   border-radius: 1em;
-  background-color: $pink;
+  background-color: var(--pink);
 }
 .contactForm__title h3 {
   font-size: 2em;
@@ -20,9 +20,10 @@
   width: 100%;
   margin-bottom: 0.5em;
   font-family: $poppinsRegular;
+  background-color: var(--bg-color);
   font-size: 18px;
   outline: none;
-  border: 1px solid $grey;
+  border: 1px solid var(--grey);
 }
 
 .contactFrom__formContainer {
