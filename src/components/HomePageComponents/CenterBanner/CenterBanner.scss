@@ -60,3 +60,10 @@
   outline: none;
   letter-spacing: 0.1em;
 }
+
+/* Media Queries */
+@media (max-width: 650px) {
+  .banner__title h1 {
+    font-size: 2.125em;
+  }
+}

@@ -60,3 +60,17 @@
 .aboutMe__boldText {
   font-family: $poppinsSemiBold;
 }
+
+/* Media Queries */
+@media (max-width: 650px) {
+  .aboutMe__avatar {
+    height: 3em;
+    width: 3em;
+  }
+  .aboutMe__titleUpper {
+    font-size: 15px;
+  }
+  .aboutMe__titleBelow {
+    font-size: 20px;
+  }
+}

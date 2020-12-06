@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { onPageLoadScrollTop } from "../../utils/utils";
+
 import {
   AchievementsBanner,
   AchievementsList,
@@ -8,6 +10,10 @@ import {
 } from "../../components";
 
 const Achievements = () => {
+  // Scroll Top
+  useEffect(() => {
+    onPageLoadScrollTop();
+  }, []);
   return (
     <div>
       <Header />

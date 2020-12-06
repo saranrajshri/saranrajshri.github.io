@@ -3,6 +3,7 @@ export const Context = createContext();
 
 // Global State
 const initialState = {
+  isDarkModeEnabled: false,
   socialMediaLinks: {
     resume: "#",
     linkedIn: "http://linkedin.com/in/saranrajshri",
@@ -57,6 +58,11 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     default:
+    case "SET_DARK_MODE":
+      return {
+        ...state,
+        isDarkModeEnabled: action.payload,
+      };
       throw new Error();
   }
 };

@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Switch from "react-switch";
 
 import "./Header.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Context } from "../../../context/Context";
 
 const Header = () => {
   const [isDarkModeEnabled, setDarkMode] = useState(false);
-
+  const [state, dispatch] = useContext(Context);
   const handleThemeChange = (isDarkModeEnabled) => {
     setDarkMode(isDarkModeEnabled);
-
+    // Update the global state
+    dispatch({ type: "SET_DARK_MODE", payload: isDarkModeEnabled });
     // Change the DOM Element Attribute
     if (isDarkModeEnabled) {
       document
@@ -46,7 +48,7 @@ const Header = () => {
               onChange={(isDarkModeEnabled) =>
                 handleThemeChange(isDarkModeEnabled)
               }
-              checked={isDarkModeEnabled}
+              checked={state.isDarkModeEnabled}
             />
           </a>
         </div>

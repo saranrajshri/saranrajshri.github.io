@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { onPageLoadScrollTop } from "../../utils/utils";
+
 import { motion } from "framer-motion";
 
 import {
@@ -10,6 +12,10 @@ import {
 } from "../../components";
 
 const Home = () => {
+  // Scroll Top
+  useEffect(() => {
+    onPageLoadScrollTop();
+  }, []);
   return (
     <div>
       <motion.div
