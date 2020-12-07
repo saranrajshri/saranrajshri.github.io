@@ -3,9 +3,13 @@ export const Context = createContext();
 
 // Global State
 const initialState = {
-  isDarkModeEnabled: false,
+  isDarkModeEnabled:
+    localStorage.getItem("SET_DARK_MODE") === "true"
+      ? localStorage.getItem("SET_DARK_MODE")
+      : false,
   socialMediaLinks: {
-    resume: "#",
+    resume:
+      "https://drive.google.com/file/d/1AaXBaAprcKtOsQ8GtZWoBXRYQ0fkHlBa/view?usp=sharing",
     linkedIn: "http://linkedin.com/in/saranrajshri",
     github: "http://github.com/saranrajshri",
     leetCode: "https://leetcode.com/saranrajshri/",
@@ -69,6 +73,9 @@ const reducer = (state, action) => {
           .getElementsByTagName("HTML")[0]
           .setAttribute("data-theme", "light");
       }
+      // Update the localStorage Variable
+      localStorage.setItem("SET_DARK_MODE", action.payload);
+
       return {
         ...state,
         isDarkModeEnabled: action.payload,

@@ -46,7 +46,7 @@ const Footer = (props) => {
         <CustomDivider />
         <center>
           <div className="footer__bottomLinks">
-            <div className="footer_menu">
+            <div className="footer__menu">
               <a href="/#/">Home</a>
               <a href="/#/projects">Projects</a>
               <a href="/#/achievements">Achievements</a>
